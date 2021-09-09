@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Fruit} from "../../models/fruits.model";
 
 @Component({
   selector: 'app-fruits',
@@ -6,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fruits.component.scss']
 })
 export class FruitsComponent implements OnInit {
+
+
+  fruits: Fruit[] = [
+    new Fruit("Apple"),
+    new Fruit("Banana"),
+    new Fruit("Orange"),
+    new Fruit("Mango"),
+  ];
+
+  onClick(){
+    console.log('button clicked');
+  }
+
 
   constructor() { }
 
