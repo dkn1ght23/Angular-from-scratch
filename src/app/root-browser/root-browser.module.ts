@@ -3,17 +3,30 @@ import { NgModule } from '@angular/core';
 import { RootBrowserRoutingModule } from './root-browser-routing.module';
 import { RootDefaultComponent } from './components/root-default/root-default.component';
 import {BrowserModule} from "@angular/platform-browser";
-import { FruitsComponent } from './components/fruits/fruits.component';
-
+import {FormsModule} from "@angular/forms";
+import { FruitCircleComponent } from './components/fruit-circle/fruit-circle.component';
+import { FruitNormalComponent } from './components/fruit-normal/fruit-normal.component';
+import { DeshboardComponent } from './components/deshboard/deshboard.component';
+import { Error404Component } from './components/error404/error404.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { CustomTestComponent } from './components/custom-test/custom-test.component';
 
 @NgModule({
   declarations: [
     RootDefaultComponent,
-    FruitsComponent
+    FruitCircleComponent,
+    FruitNormalComponent,
+    DeshboardComponent,
+    Error404Component,
+    CustomTestComponent,
   ],
   imports: [
     BrowserModule,
-    RootBrowserRoutingModule
+    FormsModule,
+    RootBrowserRoutingModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [RootDefaultComponent]

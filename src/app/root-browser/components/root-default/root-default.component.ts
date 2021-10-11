@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RootDefaultComponent implements OnInit {
 
+
+  hello = 'hi from ts file';
+
   constructor() { }
 
   ngOnInit(): void {
