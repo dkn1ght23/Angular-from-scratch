@@ -11,6 +11,7 @@ import { Error404Component } from './components/error404/error404.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import { CustomTestComponent } from './components/custom-test/custom-test.component';
+import {AppGenericModule} from "../app-generic/app-generic.module";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CustomTestComponent } from './components/custom-test/custom-test.compon
     RootBrowserRoutingModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    AppGenericModule,
   ],
   providers: [],
   bootstrap: [RootDefaultComponent]

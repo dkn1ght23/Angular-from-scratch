@@ -1,0 +1,21 @@
+.top-nav-header{
+  padding: 20px;
+  background-color: #177CB0;
+}
+
+.top-nav-header a,
+.top-nav-header a:active,
+.top-nav-header a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.top-nav-header .header-title h1{
+  font-size: 20px;
+  color: white;
+}
+
+.top-nav-header .header-menu ul > li{
+  list-style: none;
+  margin-right: 12px;
+}
