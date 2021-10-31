@@ -7,7 +7,7 @@ import {Error404Component} from "./components/error404/error404.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'blog',
     loadChildren: () => import('../app-blog/app-blog.module').then(n => n.AppBlogModule)
   },
   {

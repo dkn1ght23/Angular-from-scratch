@@ -12,6 +12,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import { CustomTestComponent } from './components/custom-test/custom-test.component';
 import {AppGenericModule} from "../app-generic/app-generic.module";
+import {BlogService} from "./services/blog.service";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,8 +31,11 @@ import {AppGenericModule} from "../app-generic/app-generic.module";
     MatButtonModule,
     MatProgressSpinnerModule,
     AppGenericModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    BlogService
+  ],
   bootstrap: [RootDefaultComponent]
 })
 export class RootBrowserModule { }
