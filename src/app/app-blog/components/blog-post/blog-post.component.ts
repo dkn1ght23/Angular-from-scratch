@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {BlogService} from "../../../root-browser/services/blog.service";
+import {BlogPost} from "../../modles/blog-post.modle";
 
 
 @Component({
@@ -9,6 +10,9 @@ import {BlogService} from "../../../root-browser/services/blog.service";
 })
 export class BlogPostComponent implements OnInit, OnDestroy{
 
+
+  blogPost: BlogPost[] = [];
+
   constructor(private blogService: BlogService) {
 
   }
@@ -16,7 +20,8 @@ export class BlogPostComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
 
     this.blogService.getAllPost().subscribe( (response: any) => {
-      console.log(response);
+      this.blogPost=response;
+      //console.log(response);
     })
 
   }

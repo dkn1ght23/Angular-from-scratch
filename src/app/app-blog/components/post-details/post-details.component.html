@@ -1,0 +1,16 @@
+<div class="blog-post-wrapper">
+  <div class="article" *ngIf="blogPost">
+    <h3>{{ blogPost.title }}</h3>
+    <p>{{ blogPost.body }}</p>
+  </div>
+
+  <div class="user-details" *ngIf="user">
+    <p>{{ user.email }}</p>
+    <p>{{ user.name }}</p>
+    <p>{{ user.username }}</p>
+    <p>{{ user.phone }}</p>
+    <p>{{ user.address }}</p>
+    <p>{{ user.company.name }}</p>
+  </div>
+</div>
+

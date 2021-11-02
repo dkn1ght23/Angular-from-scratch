@@ -1,1 +1,7 @@
-<p>blog-post works!</p>
+<div class="blog-post-wrapper">
+  <div class="article" *ngFor="let post of blogPost">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+    <a routerLink="{{'/blog/posts/' +post.id}}">View More</a>
+  </div>
+</div>

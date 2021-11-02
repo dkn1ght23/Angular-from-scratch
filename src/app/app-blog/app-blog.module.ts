@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AppBlogRoutingModule } from './app-blog-routing.module';
 import { BlogDefaultComponent } from './components/blog-default/blog-default.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
 
 
 @NgModule({
   declarations: [
     BlogDefaultComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    PostDetailsComponent
   ],
   imports: [
     CommonModule,

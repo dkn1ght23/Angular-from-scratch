@@ -10,7 +10,17 @@ export class BlogService{
   }
 
   getAllPost(){
-    let url="https://jsonplaceholder.typicode.com/posts";
+    let url= 'https://jsonplaceholder.typicode.com/posts';
+    return this.httpClient.get(url);
+  }
+
+  getPostById(postID: string){
+    let url='https://jsonplaceholder.typicode.com/posts/' + postID;
+    return this.httpClient.get(url);
+  }
+
+  getUserById(userID: number){
+    let url= 'https://jsonplaceholder.typicode.com/users/' + userID;
     return this.httpClient.get(url);
   }
 
