@@ -15,7 +15,14 @@
   color: white;
 }
 
+.top-nav-header .header-title {
+  width: 50%;
+  float: left;
+}
+
 .top-nav-header .header-menu ul > li{
   list-style: none;
-  margin-right: 12px;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline;
 }
