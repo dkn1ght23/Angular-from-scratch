@@ -9,22 +9,27 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { AppRegistrationComponent } from './components/app-registration/app-registration.component';
+import {BrowserModule} from "@angular/platform-browser";
 
 
 @NgModule({
   declarations: [
     LoginWithEmailComponent,
-    AuthenticationDefaultComponent
+    AuthenticationDefaultComponent,
+    AppRegistrationComponent
   ],
-  imports: [
-    CommonModule,
-    AuthenticationRoutingModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCardModule,
-    FlexLayoutModule,
+    imports: [
+        CommonModule,
+        AuthenticationRoutingModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatButtonModule,
+        MatCardModule,
+        FlexLayoutModule,
+        MatCheckboxModule,
 
-  ]
+    ]
 })
 export class AuthenticationModule { }

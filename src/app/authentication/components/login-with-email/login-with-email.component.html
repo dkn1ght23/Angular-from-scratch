@@ -6,7 +6,8 @@
         <img class="header-logo" src="assets/img/user-profile.png" alt="login logo">
         <p class="header-title">Log in to the website</p>
       </div>
-      <form [formGroup]="loginForm">
+      <form [formGroup]="loginForm" (ngSubmit)="onLoginFormSubmit()">
+
         <mat-form-field class="mat-form-field">
           <mat-label>Email *</mat-label>
           <input matInput formControlName="Email" placeholder="Email">
@@ -29,7 +30,7 @@
 
         </mat-form-field>
 
-        <button mat-raised-button color="primary" class="margin-top-16" [disabled]="loginForm.invalid">Submit</button>
+        <button mat-raised-button color="primary" class="margin-top-16" [disabled]="loginForm.invalid" type="submit">Submit</button>
       </form>
     </mat-card>
   </div>

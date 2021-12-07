@@ -14,6 +14,8 @@ import { CustomTestComponent } from './components/custom-test/custom-test.compon
 import {AppGenericModule} from "../app-generic/app-generic.module";
 import {BlogService} from "./services/blog.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {BackendService} from "./services/backend.service";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -32,9 +34,12 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     MatProgressSpinnerModule,
     AppGenericModule,
     HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [
-    BlogService
+    BlogService,
+    BackendService,
   ],
   bootstrap: [RootDefaultComponent]
 })
